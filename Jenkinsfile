@@ -98,7 +98,7 @@ pipeline {
         }
 
         stage ('kubernetes deploy') {
-            agent {lable 'EKS'}
+            agent {label 'EKS'}
                 steps {
                         sh "helm upgrade --install --force vproifle-stack helm/vprofilecharts --set appimage=${registry}:app-v${BUILD_NUMBER} --namespace prod"
                 }
