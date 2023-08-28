@@ -8,7 +8,7 @@ peline {
 */
     environment {
         registry= "mohamedtarekelsayed/vprofile-project"
-        registryCredential= 'dockerhub '
+        registryCredential= 'dockerhub'
     }
 
     stages{
